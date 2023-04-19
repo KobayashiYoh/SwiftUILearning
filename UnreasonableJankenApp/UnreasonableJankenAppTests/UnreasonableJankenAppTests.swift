@@ -6,8 +6,11 @@
 //
 
 import XCTest
+@testable import UnreasonableJankenApp
 
 final class UnreasonableJankenAppTests: XCTestCase {
+    
+    let viewController = ContentView()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,6 +26,15 @@ final class UnreasonableJankenAppTests: XCTestCase {
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.rock, cpuHand: Hand.rock), Result.draw)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.rock, cpuHand: Hand.scissors), Result.win)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.rock, cpuHand: Hand.paper), Result.lose)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.scissors, cpuHand: Hand.rock), Result.lose)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.scissors, cpuHand: Hand.scissors), Result.draw)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.scissors, cpuHand: Hand.paper), Result.win)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.paper, cpuHand: Hand.rock), Result.win)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.paper, cpuHand: Hand.scissors), Result.lose)
+        XCTAssertEqual(viewController.judgeResult(yourHand: Hand.paper, cpuHand: Hand.paper), Result.draw)
     }
 
     func testPerformanceExample() throws {
@@ -31,5 +43,4 @@ final class UnreasonableJankenAppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

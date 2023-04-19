@@ -74,12 +74,12 @@ struct ContentView: View {
     func onPressedAction(hand: Hand) -> Hand {
         self.yourHand = hand
         self.cpuHand = Hand.allCases.randomElement() ?? Hand.rock
-        self.result = judgeResult()
+        self.result = judgeResult(yourHand: self.yourHand, cpuHand: self.cpuHand)
         return hand
     }
-    func judgeResult() -> Result {
+    func judgeResult(yourHand: Hand, cpuHand: Hand) -> Result {
         let isDraw = yourHand == cpuHand
-        let isWin = (self.yourHand == Hand.rock && self.cpuHand == Hand.scissors) || (self.yourHand == Hand.scissors && self.cpuHand == Hand.paper) || (self.yourHand == Hand.paper && self.cpuHand == Hand.rock)
+        let isWin = (yourHand == Hand.rock && cpuHand == Hand.scissors) || (yourHand == Hand.scissors && cpuHand == Hand.paper) || (yourHand == Hand.paper && cpuHand == Hand.rock)
         if (isDraw) {
             return Result.draw
         } else if (isWin) {
