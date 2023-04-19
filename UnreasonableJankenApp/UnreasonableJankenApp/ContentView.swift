@@ -7,13 +7,29 @@
 
 import SwiftUI
 
+enum Hand {
+    case rock
+    case scissors
+    case paper
+}
+
+extension Hand {
+    func text() -> String {
+        switch (self) {
+        case Hand.rock:
+            return "グー"
+        case Hand.scissors:
+            return "チョキ"
+        case Hand.paper:
+            return "パー"
+        }
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(Hand.paper.text())
         }
         .padding()
     }
