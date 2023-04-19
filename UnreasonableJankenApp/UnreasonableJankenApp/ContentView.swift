@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Hand {
+enum Hand: CaseIterable {
     case rock
     case scissors
     case paper
@@ -52,6 +52,7 @@ struct ContentView: View {
     }
     func onPressedAction(hand: Hand) -> Hand {
         self.yourHand = hand
+        self.cpuHand = Hand.allCases.randomElement() ?? Hand.rock
         return hand
     }
 }
