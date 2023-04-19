@@ -26,11 +26,32 @@ extension Hand {
     }
 }
 
+enum Result {
+    case win
+    case lose
+    case draw
+}
+
+extension Result {
+    func text() -> String {
+        switch (self) {
+        case Result.win:
+            return "あなたの勝利！"
+        case Result.lose:
+            return "あなたの敗北…"
+        case Result.draw:
+            return "引き分け"
+        }
+    }
+}
+
 struct ContentView: View {
+    @State var result = Result.draw
     @State var cpuHand = Hand.rock
     @State var yourHand = Hand.rock
     var body: some View {
         VStack {
+            Text(result.text()).font(.title)
             Text("CPU: \(cpuHand.text())")
             Text("あなた: \(yourHand.text())")
             HStack {
@@ -53,7 +74,19 @@ struct ContentView: View {
     func onPressedAction(hand: Hand) -> Hand {
         self.yourHand = hand
         self.cpuHand = Hand.allCases.randomElement() ?? Hand.rock
+        self.result = judgeResult()
         return hand
+    }
+    func judgeResult() -> Result {
+        let isDraw = yourHand == cpuHand
+        let isWin = (self.yourHand == Hand.rock && self.cpuHand == Hand.scissors) || (self.yourHand == Hand.scissors && self.cpuHand == Hand.paper) || (self.yourHand == Hand.paper && self.cpuHand == Hand.rock)
+        if (isDraw) {
+            return Result.draw
+        } else if (isWin) {
+            return Result.win
+        } else {
+            return Result.lose
+        }
     }
 }
 
