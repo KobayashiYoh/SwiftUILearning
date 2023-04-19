@@ -14,6 +14,7 @@
 		D9A25F5929F027260069A722 /* UnreasonableJankenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A25F5829F027260069A722 /* UnreasonableJankenAppTests.swift */; };
 		D9A25F6329F027260069A722 /* UnreasonableJankenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A25F6229F027260069A722 /* UnreasonableJankenAppUITests.swift */; };
 		D9A25F6529F027260069A722 /* UnreasonableJankenAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A25F6429F027260069A722 /* UnreasonableJankenAppUITestsLaunchTests.swift */; };
+		D9A25F7229F02D100069A722 /* HandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A25F7129F02D100069A722 /* HandButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D9A25F5E29F027260069A722 /* UnreasonableJankenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnreasonableJankenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A25F6229F027260069A722 /* UnreasonableJankenAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnreasonableJankenAppUITests.swift; sourceTree = "<group>"; };
 		D9A25F6429F027260069A722 /* UnreasonableJankenAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnreasonableJankenAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9A25F7129F02D100069A722 /* HandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D9A25F4A29F027250069A722 /* Assets.xcassets */,
 				D9A25F4C29F027250069A722 /* UnreasonableJankenApp.entitlements */,
 				D9A25F4D29F027250069A722 /* Preview Content */,
+				D9A25F7129F02D100069A722 /* HandButton.swift */,
 			);
 			path = UnreasonableJankenApp;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A25F4929F027250069A722 /* ContentView.swift in Sources */,
+				D9A25F7229F02D100069A722 /* HandButton.swift in Sources */,
 				D9A25F4729F027250069A722 /* UnreasonableJankenAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

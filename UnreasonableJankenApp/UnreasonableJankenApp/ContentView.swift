@@ -27,11 +27,22 @@ extension Hand {
 }
 
 struct ContentView: View {
+    @State var cpuHand = Hand.rock
+    @State var yourHand = Hand.rock
     var body: some View {
         VStack {
-            Text(Hand.paper.text())
+            Text("CPU: \(cpuHand.text())")
+            Text("あなた: \(yourHand.text())")
+            HStack {
+                HandButton(hand: Hand.rock)
+                HandButton(hand: Hand.scissors)
+                HandButton(hand: Hand.paper)
+            }
         }
         .padding()
+    }
+    init() {
+        self.yourHand = Hand.paper
     }
 }
 
