@@ -34,15 +34,25 @@ struct ContentView: View {
             Text("CPU: \(cpuHand.text())")
             Text("あなた: \(yourHand.text())")
             HStack {
-                HandButton(hand: Hand.rock)
-                HandButton(hand: Hand.scissors)
-                HandButton(hand: Hand.paper)
+                HandButton(
+                    action: {onPressedAction(hand: Hand.rock)}
+                )
+                HandButton(
+                    action: {onPressedAction(hand: Hand.scissors)}
+                )
+                HandButton(
+                    action: {onPressedAction(hand: Hand.paper)}
+                )
             }
         }
         .padding()
     }
     init() {
         self.yourHand = Hand.paper
+    }
+    func onPressedAction(hand: Hand) -> Hand {
+        self.yourHand = hand
+        return hand
     }
 }
 

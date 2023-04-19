@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct HandButton: View {
-    var hand: Hand
+    var action: () -> Hand
     var body: some View {
-        Button(action: {}) {
-            Text(hand.text())
+        Button(action: {action()}) {
+            Text(action().text())
         }
     }
 }
 
 struct HandButton_Previews: PreviewProvider {
     static var previews: some View {
-        HandButton(hand: Hand.rock)
+        HandButton(action: {Hand.rock})
     }
 }
