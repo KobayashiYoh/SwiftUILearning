@@ -14,7 +14,7 @@ enum Hand: CaseIterable {
 }
 
 extension Hand {
-    func text() -> String {
+    func labelText() -> String {
         switch (self) {
         case Hand.rock:
             return "グー"
@@ -22,6 +22,16 @@ extension Hand {
             return "チョキ"
         case Hand.paper:
             return "パー"
+        }
+    }
+    func iconText() -> String {
+        switch (self) {
+        case Hand.rock:
+            return "✊"
+        case Hand.scissors:
+            return "✌️"
+        case Hand.paper:
+            return "✋"
         }
     }
 }
@@ -51,9 +61,9 @@ struct ContentView: View {
     @State var yourHand = Hand.rock
     var body: some View {
         VStack {
-            Text(result.text()).font(.title)
-            Text("CPU: \(cpuHand.text())")
-            Text("あなた: \(yourHand.text())")
+            Text(result.text()).font(.title).padding()
+            Text("CPU: \(cpuHand.labelText())")
+            Text("あなた: \(yourHand.labelText())")
             HStack {
                 HandButton(
                     action: {onPressedAction(hand: Hand.rock)}
@@ -64,7 +74,7 @@ struct ContentView: View {
                 HandButton(
                     action: {onPressedAction(hand: Hand.paper)}
                 )
-            }
+            }.padding()
         }
         .padding()
     }

@@ -11,7 +11,7 @@ struct HandButton: View {
     var action: () -> Hand
     var body: some View {
         Button(action: {action()}) {
-            Text(action().text())
+            Text(action().iconText())
         }
     }
 }
