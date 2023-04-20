@@ -59,6 +59,9 @@ struct ContentView: View {
     @State var result = Result.draw
     @State var cpuHand = Hand.rock
     @State var yourHand = Hand.rock
+    @State var leftHand = Hand.allCases.randomElement() ?? Hand.rock
+    @State var centerHand = Hand.allCases.randomElement() ?? Hand.rock
+    @State var rightHand = Hand.allCases.randomElement() ?? Hand.rock
     var body: some View {
         VStack {
             Text(result.text()).font(.title).padding()
@@ -66,25 +69,25 @@ struct ContentView: View {
             Text("あなた: \(yourHand.labelText())")
             HStack {
                 HandButton(
-                    action: {onPressedAction(hand: Hand.rock)}
+                    action: {onPressedAction(hand: leftHand)}
                 )
                 HandButton(
-                    action: {onPressedAction(hand: Hand.scissors)}
+                    action: {onPressedAction(hand: centerHand)}
                 )
                 HandButton(
-                    action: {onPressedAction(hand: Hand.paper)}
+                    action: {onPressedAction(hand: rightHand)}
                 )
             }.padding()
         }
         .padding()
     }
-    init() {
-        self.yourHand = Hand.paper
-    }
     func onPressedAction(hand: Hand) -> Hand {
         self.yourHand = hand
         self.cpuHand = Hand.allCases.randomElement() ?? Hand.rock
         self.result = judgeResult(yourHand: self.yourHand, cpuHand: self.cpuHand)
+        self.leftHand = Hand.allCases.randomElement() ?? Hand.rock
+        self.centerHand = Hand.allCases.randomElement() ?? Hand.rock
+        self.rightHand = Hand.allCases.randomElement() ?? Hand.rock
         return hand
     }
     func judgeResult(yourHand: Hand, cpuHand: Hand) -> Result {
