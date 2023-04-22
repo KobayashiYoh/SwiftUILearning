@@ -18,3 +18,4 @@ jobs:
 
       - name: UnitTests
         run: xcodebuild test -project UnitTestApp01.xcodeproj -scheme UnitTestApp01 -sdk iphonesimulator -destination platform='iOS Simulator,name=iPhone 12,OS=16.1'
+        working-directory: ./UnreasonableJankenApp
