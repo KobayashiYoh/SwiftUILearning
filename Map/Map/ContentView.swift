@@ -20,12 +20,30 @@ struct ContentView: View {
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 37.334900,
                                        longitude: 112.009020),
-        latitudinalMeters: 10000,
-        longitudinalMeters: 10000
+        latitudinalMeters: 16000,
+        longitudinalMeters: 16000
     )
     
+    func updateRegion() {
+        let latitude: Double = Double.random(in: 24...43)
+        let longitude: Double = Double.random(in: 122...141)
+        region = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: latitude,
+                                           longitude: longitude),
+            latitudinalMeters: 80000,
+            longitudinalMeters: 80000
+        )
+    }
+    
     var body: some View {
-        Map(coordinateRegion: $region).ignoresSafeArea()
+        ZStack {
+            Map(coordinateRegion: $region).ignoresSafeArea()
+            Button(action: {
+                updateRegion()
+            }){
+                Text("座標ガチャを回す")
+            }
+        }
     }
 }
 
