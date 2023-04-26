@@ -17,8 +17,15 @@ struct MapView: UIViewRepresentable {
 }
 
 struct ContentView: View {
+    @State private var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 37.334900,
+                                       longitude: 112.009020),
+        latitudinalMeters: 10000,
+        longitudinalMeters: 10000
+    )
+    
     var body: some View {
-        MapView().ignoresSafeArea()
+        Map(coordinateRegion: $region).ignoresSafeArea()
     }
 }
 
