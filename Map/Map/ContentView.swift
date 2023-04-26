@@ -16,12 +16,14 @@ struct MapView: UIViewRepresentable {
     }
 }
 
+let defaultMeters: Double = 16000
 struct ContentView: View {
+    // 初期座標はTokyo
     @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 37.334900,
-                                       longitude: 112.009020),
-        latitudinalMeters: 16000,
-        longitudinalMeters: 16000
+        center: CLLocationCoordinate2D(latitude: 35.68385063,
+                                       longitude: 139.75397279),
+        latitudinalMeters: defaultMeters,
+        longitudinalMeters: defaultMeters
     )
     
     func updateRegion() {
@@ -30,8 +32,8 @@ struct ContentView: View {
         region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: latitude,
                                            longitude: longitude),
-            latitudinalMeters: 80000,
-            longitudinalMeters: 80000
+            latitudinalMeters: defaultMeters,
+            longitudinalMeters: defaultMeters
         )
     }
     
