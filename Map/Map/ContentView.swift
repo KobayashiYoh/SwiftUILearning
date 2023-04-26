@@ -16,7 +16,7 @@ struct MapView: UIViewRepresentable {
     }
 }
 
-let defaultMeters: Double = 16000
+let defaultMeters: Double = 20000
 struct ContentView: View {
     // 初期座標はTokyo
     @State private var region = MKCoordinateRegion(
@@ -38,13 +38,13 @@ struct ContentView: View {
     }
     
     var body: some View {
-        ZStack {
+        ZStack (alignment: .bottom) {
             Map(coordinateRegion: $region).ignoresSafeArea()
             Button(action: {
                 updateRegion()
-            }){
-                Text("座標ガチャを回す")
-            }
+            }, label: {
+                Text("座標ガチャを回す").foregroundColor(Color.white).padding()
+            }).background(Color.black).cornerRadius(24)
         }
     }
 }
