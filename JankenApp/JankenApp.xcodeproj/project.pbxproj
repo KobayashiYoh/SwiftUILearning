@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D93CEE512BD9341400F39E7E /* JankenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE502BD9341400F39E7E /* JankenAppApp.swift */; };
+		D93CEE532BD9341400F39E7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE522BD9341400F39E7E /* ContentView.swift */; };
+		D93CEE552BD9341500F39E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93CEE542BD9341500F39E7E /* Assets.xcassets */; };
+		D93CEE582BD9341500F39E7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93CEE572BD9341500F39E7E /* Preview Assets.xcassets */; };
+		D93CEE622BD9341500F39E7E /* JankenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE612BD9341500F39E7E /* JankenAppTests.swift */; };
+		D93CEE6C2BD9341500F39E7E /* JankenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE6B2BD9341500F39E7E /* JankenAppUITests.swift */; };
+		D93CEE6E2BD9341500F39E7E /* JankenAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE6D2BD9341500F39E7E /* JankenAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D93CEE5E2BD9341500F39E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D93CEE452BD9341400F39E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93CEE4C2BD9341400F39E7E;
+			remoteInfo = JankenApp;
+		};
+		D93CEE682BD9341500F39E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D93CEE452BD9341400F39E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93CEE4C2BD9341400F39E7E;
+			remoteInfo = JankenApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D93CEE4D2BD9341400F39E7E /* JankenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JankenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93CEE502BD9341400F39E7E /* JankenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenAppApp.swift; sourceTree = "<group>"; };
+		D93CEE522BD9341400F39E7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D93CEE542BD9341500F39E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D93CEE572BD9341500F39E7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D93CEE5D2BD9341500F39E7E /* JankenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JankenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93CEE612BD9341500F39E7E /* JankenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenAppTests.swift; sourceTree = "<group>"; };
+		D93CEE672BD9341500F39E7E /* JankenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JankenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93CEE6B2BD9341500F39E7E /* JankenAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenAppUITests.swift; sourceTree = "<group>"; };
+		D93CEE6D2BD9341500F39E7E /* JankenAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D93CEE4A2BD9341400F39E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93CEE5A2BD9341500F39E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93CEE642BD9341500F39E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D93CEE442BD9341400F39E7E = {
+			isa = PBXGroup;
+			children = (
+				D93CEE4F2BD9341400F39E7E /* JankenApp */,
+				D93CEE602BD9341500F39E7E /* JankenAppTests */,
+				D93CEE6A2BD9341500F39E7E /* JankenAppUITests */,
+				D93CEE4E2BD9341400F39E7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D93CEE4E2BD9341400F39E7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D93CEE4D2BD9341400F39E7E /* JankenApp.app */,
+				D93CEE5D2BD9341500F39E7E /* JankenAppTests.xctest */,
+				D93CEE672BD9341500F39E7E /* JankenAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D93CEE4F2BD9341400F39E7E /* JankenApp */ = {
+			isa = PBXGroup;
+			children = (
+				D93CEE502BD9341400F39E7E /* JankenAppApp.swift */,
+				D93CEE522BD9341400F39E7E /* ContentView.swift */,
+				D93CEE542BD9341500F39E7E /* Assets.xcassets */,
+				D93CEE562BD9341500F39E7E /* Preview Content */,
+			);
+			path = JankenApp;
+			sourceTree = "<group>";
+		};
+		D93CEE562BD9341500F39E7E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D93CEE572BD9341500F39E7E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D93CEE602BD9341500F39E7E /* JankenAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D93CEE612BD9341500F39E7E /* JankenAppTests.swift */,
+			);
+			path = JankenAppTests;
+			sourceTree = "<group>";
+		};
+		D93CEE6A2BD9341500F39E7E /* JankenAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D93CEE6B2BD9341500F39E7E /* JankenAppUITests.swift */,
+				D93CEE6D2BD9341500F39E7E /* JankenAppUITestsLaunchTests.swift */,
+			);
+			path = JankenAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D93CEE4C2BD9341400F39E7E /* JankenApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93CEE712BD9341500F39E7E /* Build configuration list for PBXNativeTarget "JankenApp" */;
+			buildPhases = (
+				D93CEE492BD9341400F39E7E /* Sources */,
+				D93CEE4A2BD9341400F39E7E /* Frameworks */,
+				D93CEE4B2BD9341400F39E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JankenApp;
+			productName = JankenApp;
+			productReference = D93CEE4D2BD9341400F39E7E /* JankenApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D93CEE5C2BD9341500F39E7E /* JankenAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93CEE742BD9341500F39E7E /* Build configuration list for PBXNativeTarget "JankenAppTests" */;
+			buildPhases = (
+				D93CEE592BD9341500F39E7E /* Sources */,
+				D93CEE5A2BD9341500F39E7E /* Frameworks */,
+				D93CEE5B2BD9341500F39E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D93CEE5F2BD9341500F39E7E /* PBXTargetDependency */,
+			);
+			name = JankenAppTests;
+			productName = JankenAppTests;
+			productReference = D93CEE5D2BD9341500F39E7E /* JankenAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D93CEE662BD9341500F39E7E /* JankenAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93CEE772BD9341500F39E7E /* Build configuration list for PBXNativeTarget "JankenAppUITests" */;
+			buildPhases = (
+				D93CEE632BD9341500F39E7E /* Sources */,
+				D93CEE642BD9341500F39E7E /* Frameworks */,
+				D93CEE652BD9341500F39E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D93CEE692BD9341500F39E7E /* PBXTargetDependency */,
+			);
+			name = JankenAppUITests;
+			productName = JankenAppUITests;
+			productReference = D93CEE672BD9341500F39E7E /* JankenAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D93CEE452BD9341400F39E7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D93CEE4C2BD9341400F39E7E = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					D93CEE5C2BD9341500F39E7E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = D93CEE4C2BD9341400F39E7E;
+					};
+					D93CEE662BD9341500F39E7E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = D93CEE4C2BD9341400F39E7E;
+					};
+				};
+			};
+			buildConfigurationList = D93CEE482BD9341400F39E7E /* Build configuration list for PBXProject "JankenApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D93CEE442BD9341400F39E7E;
+			productRefGroup = D93CEE4E2BD9341400F39E7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D93CEE4C2BD9341400F39E7E /* JankenApp */,
+				D93CEE5C2BD9341500F39E7E /* JankenAppTests */,
+				D93CEE662BD9341500F39E7E /* JankenAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D93CEE4B2BD9341400F39E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93CEE582BD9341500F39E7E /* Preview Assets.xcassets in Resources */,
+				D93CEE552BD9341500F39E7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93CEE5B2BD9341500F39E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93CEE652BD9341500F39E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D93CEE492BD9341400F39E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93CEE532BD9341400F39E7E /* ContentView.swift in Sources */,
+				D93CEE512BD9341400F39E7E /* JankenAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93CEE592BD9341500F39E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93CEE622BD9341500F39E7E /* JankenAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93CEE632BD9341500F39E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93CEE6C2BD9341500F39E7E /* JankenAppUITests.swift in Sources */,
+				D93CEE6E2BD9341500F39E7E /* JankenAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D93CEE5F2BD9341500F39E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D93CEE4C2BD9341400F39E7E /* JankenApp */;
+			targetProxy = D93CEE5E2BD9341500F39E7E /* PBXContainerItemProxy */;
+		};
+		D93CEE692BD9341500F39E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D93CEE4C2BD9341400F39E7E /* JankenApp */;
+			targetProxy = D93CEE682BD9341500F39E7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D93CEE6F2BD9341500F39E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D93CEE702BD9341500F39E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D93CEE722BD9341500F39E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JankenApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.JankenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D93CEE732BD9341500F39E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JankenApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.JankenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D93CEE752BD9341500F39E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.JankenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JankenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JankenApp";
+			};
+			name = Debug;
+		};
+		D93CEE762BD9341500F39E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.JankenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JankenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JankenApp";
+			};
+			name = Release;
+		};
+		D93CEE782BD9341500F39E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.JankenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JankenApp;
+			};
+			name = Debug;
+		};
+		D93CEE792BD9341500F39E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.JankenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JankenApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D93CEE482BD9341400F39E7E /* Build configuration list for PBXProject "JankenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93CEE6F2BD9341500F39E7E /* Debug */,
+				D93CEE702BD9341500F39E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93CEE712BD9341500F39E7E /* Build configuration list for PBXNativeTarget "JankenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93CEE722BD9341500F39E7E /* Debug */,
+				D93CEE732BD9341500F39E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93CEE742BD9341500F39E7E /* Build configuration list for PBXNativeTarget "JankenAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93CEE752BD9341500F39E7E /* Debug */,
+				D93CEE762BD9341500F39E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93CEE772BD9341500F39E7E /* Build configuration list for PBXNativeTarget "JankenAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93CEE782BD9341500F39E7E /* Debug */,
+				D93CEE792BD9341500F39E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D93CEE452BD9341400F39E7E /* Project object */;
+}
