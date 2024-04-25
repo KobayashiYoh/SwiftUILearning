@@ -17,6 +17,7 @@
 		D93CEE7B2BD9376C00F39E7E /* HandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE7A2BD9376C00F39E7E /* HandButton.swift */; };
 		D93CEE7D2BD9381300F39E7E /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE7C2BD9381300F39E7E /* Hand.swift */; };
 		D93CEE7F2BDA832A00F39E7E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE7E2BDA832A00F39E7E /* Result.swift */; };
+		D93CEE812BDA84D600F39E7E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CEE802BDA84D600F39E7E /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		D93CEE7A2BD9376C00F39E7E /* HandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandButton.swift; sourceTree = "<group>"; };
 		D93CEE7C2BD9381300F39E7E /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		D93CEE7E2BDA832A00F39E7E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		D93CEE802BDA84D600F39E7E /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				D93CEE7A2BD9376C00F39E7E /* HandButton.swift */,
 				D93CEE7C2BD9381300F39E7E /* Hand.swift */,
 				D93CEE7E2BDA832A00F39E7E /* Result.swift */,
+				D93CEE802BDA84D600F39E7E /* State.swift */,
 			);
 			path = JankenApp;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				D93CEE532BD9341400F39E7E /* ContentView.swift in Sources */,
 				D93CEE7B2BD9376C00F39E7E /* HandButton.swift in Sources */,
 				D93CEE512BD9341400F39E7E /* JankenAppApp.swift in Sources */,
+				D93CEE812BDA84D600F39E7E /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

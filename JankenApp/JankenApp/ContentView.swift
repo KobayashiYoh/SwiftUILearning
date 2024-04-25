@@ -8,40 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var message = "じゃんけん…"
-    @State private var result = Result.draw
-    @State private var cpuHand = Hand.rock
-
-    func generateCPUHand() -> Hand {
-        let hands = [Hand.rock, Hand.scissors, Hand.paper]
-        let hand = hands.randomElement()
-        return hand!
-    }
-
-    func judgeResult(playerHand: Hand, cpuHand: Hand) -> Result {
-        let isDraw = playerHand == cpuHand
-        let isWin = (playerHand == .rock && playerHand == .scissors) || (playerHand == .scissors && cpuHand == .paper) || (playerHand == .paper && cpuHand == .rock)
-        if (isDraw) {
-            return .draw
-        } else if (isWin) {
-            return .win
-        } else {
-            return .lose
-        }
-    }
+    @StateObject private var state = State()
 
     func onTapHand(hand: Hand) -> Void {
         let playerHand = hand
-        cpuHand = generateCPUHand()
-        result = judgeResult(playerHand: playerHand, cpuHand: cpuHand)
-        message = result.text
+        state.cpuHand = state.generateCPUHand()
+        state.result = state.judgeResult(playerHand: playerHand, cpuHand: state.cpuHand)
+        state.message = state.result.text
     }
 
     var body: some View {
         VStack {
             Spacer()
-            Text(message).font(.title)
-            Text("😎" + cpuHand.emoji)
+            Text(state.message).font(.title)
+            Text("😎" + state.cpuHand.emoji)
             Spacer()
             HStack {
                 Spacer()
