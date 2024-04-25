@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var state = State()
+
+    func onTapHand(hand: Hand) -> Void {
+        let playerHand = hand
+        state.cpuHand = state.generateCPUHand()
+        state.result = state.judgeResult(playerHand: playerHand, cpuHand: state.cpuHand)
+        state.message = state.result.text
+    }
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Spacer()
+            Text(state.message).font(.title)
+            Text("😎" + state.cpuHand.emoji)
+            Spacer()
+            HStack {
+                Spacer()
+                HandButton(onTap: {
+                    onTapHand(hand: .rock)
+                }, hand: .rock)
+                Spacer()
+                HandButton(onTap: {
+                    onTapHand(hand: .scissors)
+                }, hand: .scissors)
+                Spacer()
+                HandButton(onTap: {
+                    onTapHand(hand: .paper)
+                }, hand: .paper)
+                Spacer()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
