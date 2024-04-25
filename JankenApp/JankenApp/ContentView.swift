@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var message = "じゃんけん…"
+    @State private var result = Result.draw
     @State private var cpuHand = Hand.rock
 
     func generateCPUHand() -> Hand {
@@ -17,22 +18,23 @@ struct ContentView: View {
         return hand!
     }
 
-    func judgeResultMessage(playerHand: Hand, cpuHand: Hand) -> String {
+    func judgeResult(playerHand: Hand, cpuHand: Hand) -> Result {
         let isDraw = playerHand == cpuHand
         let isWin = (playerHand == .rock && playerHand == .scissors) || (playerHand == .scissors && cpuHand == .paper) || (playerHand == .paper && cpuHand == .rock)
         if (isDraw) {
-            return "引き分け"
+            return .draw
         } else if (isWin) {
-            return "勝ち"
+            return .win
         } else {
-            return "負け"
+            return .lose
         }
     }
 
     func onTapHand(hand: Hand) -> Void {
         let playerHand = hand
         cpuHand = generateCPUHand()
-        message = judgeResultMessage(playerHand: playerHand, cpuHand: cpuHand)
+        result = judgeResult(playerHand: playerHand, cpuHand: cpuHand)
+        message = result.text
     }
 
     var body: some View {
