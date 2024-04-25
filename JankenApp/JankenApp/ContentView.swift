@@ -9,11 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        HStack {
+            Spacer()
+            HandButton(onTap: {
+                print(Hand.rock.text)
+            }, hand: .rock)
+            Spacer()
+            HandButton(onTap: {
+                print(Hand.paper.text)
+            }, hand: .scissors)
+            Spacer()
+            HandButton(onTap: {
+                print(Hand.scissors.text)
+            }, hand: .paper)
+            Spacer()
         }
         .padding()
     }
